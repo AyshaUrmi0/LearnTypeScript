@@ -86,36 +86,3 @@ async function squareAsync(n: number): Promise<number> {
     });
 }
 
-// Example usage
-console.log(formatString("Hello")); // HELLO
-console.log(formatString("Hello", false)); // hello
-
-const books = [
-    { title: "Book A", rating: 4.5 },
-    { title: "Book B", rating: 3.2 },
-    { title: "Book C", rating: 5.0 }
-];
-console.log(filterByRating(books));
-
-console.log(concatenateArrays([1, 2], [3, 4], [5])); // [1, 2, 3, 4, 5]
-
-const myCar = new Car("Toyota", 2020, "Corolla");
-console.log(myCar.getInfo()); // Make: Toyota, Year: 2020
-console.log(myCar.getModel()); // Model: Corolla
-
-console.log(processValue("hello")); // 5
-console.log(processValue(10)); // 20
-
-const products = [
-    { name: "Pen", price: 10 },
-    { name: "Notebook", price: 25 },
-    { name: "Bag", price: 50 }
-];
-console.log(getMostExpensiveProduct(products));
-
-console.log(getDayType(Day.Monday)); // Weekday
-console.log(getDayType(Day.Sunday)); // Weekend
-
-// Async function examples
-squareAsync(4).then(console.log); // 16 after 1 second
-squareAsync(-3).catch(console.error); // Error: Negative number not allowed 
