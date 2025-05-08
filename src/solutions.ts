@@ -1,20 +1,19 @@
-// Problem 1: String formatting function
+
 function formatString(input: string, toUpper: boolean = true): string {
     return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
 
-// Problem 2: Filter by rating function
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
     return items.filter(item => item.rating >= 4);
 }
 
-// Problem 3: Generic array concatenation function
+
 function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.reduce((result, current) => result.concat(current), []);
   }
 
-// Problem 4: Vehicle and Car classes
+
 class Vehicle {
    
     constructor( private make: string,private year: number) {}
@@ -37,7 +36,7 @@ class Car extends Vehicle {
     }
 }
 
-// Problem 5: Process value function
+
 function processValue(value: string | number): number {
     if (typeof value === 'string') {
         return value.length;
@@ -45,7 +44,7 @@ function processValue(value: string | number): number {
     return value * 2;
 }
 
-// Problem 6: Product interface and function
+
 interface Product {
     name: string;
     price: number;
@@ -58,7 +57,7 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
     );
 }
 
-// Problem 7: Day enum and function
+
 enum Day {
     Monday,
     Tuesday,
@@ -73,7 +72,6 @@ function getDayType(day: Day): string {
     return day === Day.Saturday || day === Day.Sunday ? "Weekend" : "Weekday";
 }
 
-// Problem 8: Async square function
 async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
         if (n < 0) {

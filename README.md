@@ -171,25 +171,10 @@ const str = first(["a", "b"]);    // inferred as string | undefined
 
 Type inference is a powerful feature that helps write more maintainable and type-safe code while reducing the amount of type annotations needed. It's one of the key features that makes TypeScript both powerful and developer-friendly.
 
-## Project Structure
 
-- `src/solutions.ts`: Contains all the TypeScript practice solutions
-- `package.json`: Project configuration and dependencies
-- `tsconfig.json`: TypeScript configuration
 
-## Running the Project
+## Learn More About TypeScript
 
-1. Install dependencies:
-```bash
-npm install
-```
+For a comprehensive beginner's guide to TypeScript concepts, check out this Medium article:
+[TypeScript Basics: A Beginner's Guide to Key Concepts](https://medium.com/@ayshaismail021/typescript-basics-a-beginners-guide-to-key-concepts-23d458469cfa)
 
-2. Run the solutions:
-```bash
-npm start
-```
-
-3. Build the project:
-```bash
-npm run build
-``` 
