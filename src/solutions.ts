@@ -3,6 +3,7 @@ function formatString(input: string, toUpper: boolean = true): string {
     return toUpper ? input.toUpperCase() : input.toLowerCase();
 }
 
+
 // Problem 2: Filter by rating function
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
     return items.filter(item => item.rating >= 4);
@@ -10,18 +11,13 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
 
 // Problem 3: Generic array concatenation function
 function concatenateArrays<T>(...arrays: T[][]): T[] {
-    return arrays.reduce((acc, curr) => [...acc, ...curr], []);
-}
+    return arrays.reduce((result, current) => result.concat(current), []);
+  }
 
 // Problem 4: Vehicle and Car classes
 class Vehicle {
-    private make: string;
-    private year: number;
-
-    constructor(make: string, year: number) {
-        this.make = make;
-        this.year = year;
-    }
+   
+    constructor( private make: string,private year: number) {}
 
     getInfo(): string {
         return `Make: ${this.make}, Year: ${this.year}`;
@@ -29,11 +25,11 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-    private model: string;
+   
 
-    constructor(make: string, year: number, model: string) {
+    constructor(make: string, year: number,private model: string) {
         super(make, year);
-        this.model = model;
+
     }
 
     getModel(): string {
